@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toq/uiPages/splash_screen.dart';
 
 void main() {
   runApp(const BaseApplication());
@@ -9,7 +10,8 @@ class BaseApplication extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'TOQ',
-        home: null,
+        home: SplashScreen(),
       );
 }
